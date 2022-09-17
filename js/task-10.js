@@ -10,7 +10,7 @@ const createBtn = controlsRef.children[1];
 const destroyBtn = controlsRef.lastElementChild;
 
 createBtn.addEventListener('click', createBoxes);
-destroyBtn.addEventListener('click', onDestroyAll);
+destroyBtn.addEventListener('click', destroyBoxes);
 
 
 function createBoxes(amount) {
@@ -30,6 +30,6 @@ function createBoxes(amount) {
     alert("WRONG!!!! Value must be min=1 max=100")
   }
 }
-function onDestroyAll() {
+function destroyBoxes() {
   boxesRef.innerHTML = ''
 }
